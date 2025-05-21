@@ -1,0 +1,301 @@
+Arborescence du projet: /Users/fadilimeme/Desktop/esprimcareer/workshope
+Générée le: Wed May 21 17:24:14 CET 2025
+==============================================
+
+workshope (racine)
+├── .env
+├── .env.dev
+├── .env.test
+├── .idea/
+  ├── commandlinetools/
+    ├── Symfony_08_05_2025_11_16AM.xml
+    ├── schemas/
+      ├── frameworkDescriptionVersion1.1.4.xsd
+  ├── modules.xml
+  ├── php-test-framework.xml
+  ├── php.xml
+  ├── phpunit.xml
+  ├── workshope.iml
+  ├── workspace.xml
+├── .phpunit.result.cache
+├── .qodo/
+├── assets/
+  ├── app.js
+  ├── bootstrap.js
+  ├── controllers/
+  ├── controllers.json
+    ├── csrf_protection_controller.js
+    ├── hello_controller.js
+  ├── styles/
+    ├── app.css
+├── bin/
+  ├── console
+  ├── phpunit
+├── compose.override.yaml
+├── compose.yaml
+├── composer.json
+├── composer.lock
+├── config/
+  ├── bundles.php
+  ├── packages/
+    ├── asset_mapper.yaml
+    ├── cache.yaml
+    ├── csrf.yaml
+    ├── debug.yaml
+    ├── doctrine.yaml
+    ├── doctrine_migrations.yaml
+    ├── framework.yaml
+    ├── mailer.yaml
+    ├── mercure.yaml
+    ├── messenger.yaml
+    ├── monolog.yaml
+    ├── notifier.yaml
+    ├── reset_password.yaml
+    ├── routing.yaml
+    ├── security.yaml
+    ├── translation.yaml
+    ├── twig.yaml
+    ├── validator.yaml
+    ├── web_profiler.yaml
+    ├── webpack_encore.yaml
+  ├── preload.php
+  ├── routes/
+  ├── routes.yaml
+    ├── framework.yaml
+    ├── reset_password.yaml
+    ├── security.yaml
+    ├── web_profiler.yaml
+  ├── services.yaml
+├── importmap.php
+├── migrations/
+  ├── Version20250504152553.php
+  ├── Version20250505083250.php
+  ├── Version20250507163738.php
+  ├── Version20250508005010.php
+  ├── Version20250521152019.php
+├── package-lock.json
+├── package.json
+├── phpunit.xml.dist
+├── public/
+  ├── css/
+    ├── style.css
+  ├── img/
+    ├── about.jpg
+    ├── apple-touch-icon.png
+    ├── facebook.png
+    ├── favicon.png
+    ├── fxchat.png
+    ├── google.png
+    ├── hero-bg.jpg
+    ├── linkedin.png
+    ├── portfolio/
+      ├── portfolio-1.jpg
+      ├── portfolio-2.jpg
+      ├── portfolio-3.jpg
+      ├── portfolio-4.jpg
+      ├── portfolio-5.jpg
+      ├── portfolio-6.jpg
+      ├── portfolio-7.jpg
+      ├── portfolio-8.jpg
+      ├── portfolio-9.jpg
+      ├── portfolio-details-1.jpg
+      ├── portfolio-details-2.jpg
+      ├── portfolio-details-3.jpg
+    ├── testimonials/
+      ├── testimonials-1.jpg
+      ├── testimonials-2.jpg
+      ├── testimonials-3.jpg
+      ├── testimonials-4.jpg
+      ├── testimonials-5.jpg
+  ├── index.php
+  ├── js/
+    ├── main.js
+  ├── libraries/
+    ├── aos/
+      ├── aos.css
+      ├── aos.js
+    ├── bootstrap/
+      ├── css/
+        ├── bootstrap-grid.css
+        ├── bootstrap-grid.css.map
+        ├── bootstrap-grid.min.css
+        ├── bootstrap-grid.min.css.map
+        ├── bootstrap-reboot.css
+        ├── bootstrap-reboot.css.map
+        ├── bootstrap-reboot.min.css
+        ├── bootstrap-reboot.min.css.map
+        ├── bootstrap.css
+        ├── bootstrap.css.map
+        ├── bootstrap.min.css
+        ├── bootstrap.min.css.map
+      ├── js/
+        ├── bootstrap.bundle.js
+        ├── bootstrap.bundle.js.map
+        ├── bootstrap.bundle.min.js
+        ├── bootstrap.bundle.min.js.map
+        ├── bootstrap.js
+        ├── bootstrap.js.map
+        ├── bootstrap.min.js
+        ├── bootstrap.min.js.map
+    ├── boxicons/
+      ├── css/
+        ├── animations.css
+        ├── boxicons.css
+        ├── boxicons.min.css
+        ├── transformations.css
+      ├── fonts/
+        ├── boxicons.eot
+        ├── boxicons.svg
+        ├── boxicons.ttf
+        ├── boxicons.woff
+        ├── boxicons.woff2
+    ├── counterup/
+      ├── counterup.min.js
+    ├── icofont/
+      ├── fonts/
+        ├── icofont.woff
+        ├── icofont.woff2
+      ├── icofont.min.css
+    ├── isotope-layout/
+      ├── isotope.pkgd.js
+      ├── isotope.pkgd.min.js
+    ├── jquery/
+    ├── jquery.easing/
+      ├── jquery.easing.min.js
+      ├── jquery.min.js
+      ├── jquery.min.map
+    ├── owl.carousel/
+      ├── LICENSE
+      ├── README.md
+      ├── assets/
+        ├── ajax-loader.gif
+        ├── owl.carousel.css
+        ├── owl.carousel.min.css
+        ├── owl.theme.default.css
+        ├── owl.theme.default.min.css
+        ├── owl.theme.green.css
+        ├── owl.theme.green.min.css
+        ├── owl.video.play.png
+      ├── owl.carousel.js
+      ├── owl.carousel.min.js
+    ├── php-email-form/
+      ├── validate.js
+    ├── venobox/
+      ├── venobox.css
+      ├── venobox.js
+      ├── venobox.min.css
+      ├── venobox.min.js
+    ├── waypoints/
+      ├── jquery.waypoints.min.js
+├── src/
+  ├── Command/
+    ├── GenerateEntitiesCommand.php
+  ├── Controller/
+    ├── AdminController.php
+    ├── AdminDemandesController.php
+    ├── AdminGestionUtilisateursController.php
+    ├── AdminHomeController.php
+    ├── AdminToutesEntreprisesController.php
+    ├── ChatController.php
+    ├── ChatbotController.php
+    ├── ConversationController.php
+    ├── CreateAdminController.php
+    ├── FirstPageController.php
+    ├── JobSeeker/
+      ├── CVController.php
+      ├── HomeController.php
+      ├── InterviewController.php
+      ├── JobsController.php
+      ├── MessagesController.php
+      ├── ProfileController.php
+      ├── SettingsController.php
+    ├── RegistrationController.php
+    ├── ResetPasswordController.php
+    ├── SecurityController.php
+  ├── Entity/
+    ├── Administrateur.php
+    ├── Conversation.php
+    ├── Message.php
+    ├── ResetPasswordRequest.php
+    ├── User.php
+  ├── Form/
+    ├── AdministrateurType.php
+    ├── JobSeekerProfileType.php
+    ├── LoginFormType.php
+    ├── MessageType.php
+    ├── RegistrationFormType.php
+  ├── Kernel.php
+  ├── Repository/
+    ├── AdministrateurRepository.php
+    ├── ConversationRepository.php
+    ├── MessageRepository.php
+    ├── ResetPasswordRequestRepository.php
+    ├── UserRepository.php
+  ├── Security/
+    ├── LoginFormAuthenticator.php
+  ├── Service/
+    ├── AdministrateurService.php
+    ├── GeminiApiService.php
+    ├── ResetPasswordEmail.php
+    ├── UserService.php
+    ├── VoicePlayer.php
+    ├── VoiceRecorder.php
+├── symfony.lock
+├── templates/
+  ├── admin/
+    ├── GestionUtilisateurs/
+      ├── chercheurs.html.twig
+      ├── entreprise.html.twig
+      ├── index.html.twig
+    ├── ToutesEntreprises
+      ├── index.html.twig
+    ├── base-admin.html.twig
+    ├── create.html.twig
+    ├── demandes/
+      ├── index.html.twig
+    ├── home/
+      ├── index.html.twig
+    ├── index.html.twig
+  ├── base.html.twig
+  ├── chat/
+    ├── index.html.twig
+  ├── chatbot/
+    ├── index.html.twig
+  ├── conversation/
+    ├── index.html.twig
+    ├── new.html.twig
+    ├── show.html.twig
+  ├── first_page/
+    ├── index.html.twig
+  ├── job_seeker/
+    ├── applications.html.twig
+    ├── cv_builder.html.twig
+    ├── edit_profile.html.twig
+    ├── home.html.twig
+    ├── interview_prep.html.twig
+    ├── job_search.html.twig
+    ├── messages.html.twig
+    ├── profile.html.twig
+    ├── saved_jobs.html.twig
+    ├── settings.html.twig
+    ├── skills_assessment.html.twig
+  ├── registration/
+    ├── choice.html.twig
+    ├── register.html.twig
+    ├── register_company.html.twig
+    ├── register_job_seeker.html.twig
+  ├── reset_password/
+    ├── email.html.twig
+    ├── index.html.twig
+    ├── request.html.twig
+  ├── security/
+    ├── login.html.twig
+  ├── service/
+    ├── index.html.twig
+├── tests/
+  ├── bootstrap.php
+├── translations/
+├── webpack.config.js
+├── websocket-server/
+
+==============================================
