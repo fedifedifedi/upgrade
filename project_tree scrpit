@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Définir le chemin source du projet
+PROJECT_PATH="/Users/fadilimeme/Desktop/esprimcareer/workshope"
+# Définir le chemin de destination pour sauvegarder l'arborescence
+OUTPUT_PATH="/Users/fadilimeme/Desktop/ff/project_tree.txt"
+
+# Créer le dossier de destination si nécessaire
+mkdir -p "$(dirname "$OUTPUT_PATH")"
+
+# Afficher un en-tête
+echo "Arborescence du projet: $PROJECT_PATH" > "$OUTPUT_PATH"
+echo "Générée le: $(date)" >> "$OUTPUT_PATH"
+echo "==============================================" >> "$OUTPUT_PATH"
+echo "" >> "$OUTPUT_PATH"
+
+# Générer l'arborescence en utilisant find et sort
+# Exclure les dossiers node_modules, vendor, var et .git qui sont généralement volumineux
+find "$PROJECT_PATH" -type d -o -type f | sort | grep -v "node_modules\|vendor\|var\|.git" | while read -r line; do
+    # Calculer le niveau d'indentation basé sur le nombre de segments dans le chemin
+    rel_path="${line#$PROJECT_PATH/}"
+    if [ "$line" == "$rel_path" ]; then
+        # C'est le dossier racine
+        echo "$(basename "$PROJECT_PATH") (racine)" >> "$OUTPUT_PATH"
+        continue
+    fi
+    
+    # Calculer le niveau d'indentation
+    depth=$(echo "$rel_path" | tr -cd '/' | wc -c)
+    indent=$(printf '%*s' "$((depth * 2))" '')
+    
+    # Ajouter un symbole différent pour les fichiers et dossiers
+    if [ -d "$line" ]; then
+        echo "${indent}├── $(basename "$line")/" >> "$OUTPUT_PATH"
+    else
+        echo "${indent}├── $(basename "$line")" >> "$OUTPUT_PATH"
+    fi
+done
+
+echo "" >> "$OUTPUT_PATH"
+echo "==============================================" >> "$OUTPUT_PATH"
+echo "Arborescence générée avec succès dans: $OUTPUT_PATH"
+echo "Ouvrir le fichier avec: open \"$OUTPUT_PATH\""
+
+# Afficher un message à l'utilisateur
+echo "Arborescence du projet générée avec succès!"
+echo "Le fichier a été enregistré dans: $OUTPUT_PATH"
+echo "Pour l'ouvrir, tapez: open \"$OUTPUT_PATH\""
